@@ -70,3 +70,4 @@ class Character:
         self.species = ""
         self.age = 18
         self.skills = {}
+

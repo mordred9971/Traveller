@@ -1,7 +1,6 @@
-import random
-
 import Character
 import Util
+from Util import Roll
 
 char = Character.Character();
 
@@ -19,17 +18,6 @@ def Begin():
     print("IT IS NOW TIME FOR YOU TO CHOOSE YOUR BACKGROUND SKILLS")
     for x in range(1, 3 + Util.mod(char.stats['Education'])):
         char.skills[input("Enter your Chosen Skill: ")] = '0'
-
-
-def Roll(num, repeat, mod):
-    result = []
-    for i in range(repeat):
-        hold = 0
-        for n in range(num):
-            hold += random.randint(1, 6)
-        hold += mod
-        result.append(hold)
-    return result
 
 
 Begin()

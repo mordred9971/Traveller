@@ -1,3 +1,6 @@
+import random
+
+
 def mod(stat):
     if stat == 0:
         return -3
@@ -13,3 +16,14 @@ def mod(stat):
         return +2
     else:
         return +3
+
+
+def Roll(num, repeat, mod):
+    result = []
+    for i in range(repeat):
+        hold = 0
+        for n in range(num):
+            hold += random.randint(1, 6)
+        hold += mod
+        result.append(hold)
+    return result

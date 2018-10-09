@@ -16,7 +16,7 @@ class SKILLS(Enum):
     ANIMALS_HANDLING = "Animals(Handling)"
     ANIMALS_TRAINING = "Animals(Training)"
     ANIMALS_VETERINARY = "Animals(Veterinary)"
-    ATHELETIC_SDEX = "Athletics(Dex)"
+    ATHELETICS_DEX = "Athletics(Dex)"
     ATHELETICS_END = "Athletics(End)"
     ATHELETICS_STR = "Athletics(Stronk)"
     ART = "ART"
